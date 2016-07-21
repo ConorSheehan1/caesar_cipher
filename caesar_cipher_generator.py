@@ -67,10 +67,11 @@ class App(object):
             answer = ""
             for char in string:
                 if char.islower():
-                    answer += string.translate(trans_table)
+                    answer += char.translate(trans_table)
                 elif char.isupper():
-                    answer += string.translate(trans_table_upper)
-            answer = string.translate(trans_table)
+                    answer += char.translate(trans_table_upper)
+                else:
+                    answer += char
             return answer
 
         result = str(encrypt(user_string, user_increment))
