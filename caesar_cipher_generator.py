@@ -25,7 +25,7 @@ class App(object):
         self.error = Label(self.root, text="")
         self.error.pack()
 
-        self.result = Text(self.root, height=1, width="400")
+        self.result = Text(self.root, height=10, width="400")
         self.result.configure(state="disabled")
         self.result.pack()
 
