@@ -4,6 +4,9 @@ from tkinter import *
 class App(object):
     def __init__(self):
         self.root = Tk()
+		#set default dimensions and title
+        self.root.geometry("500x200")
+        #self.root.configure(bg="#769ea6")
         self.root.wm_title("Ceasar Cipher")
 
         self.label = Label(self.root, text="Enter a string to convert.")
