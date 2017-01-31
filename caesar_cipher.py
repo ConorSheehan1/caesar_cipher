@@ -9,13 +9,13 @@ class App(object):
         #self.root.configure(bg="#769ea6")
         self.root.wm_title("Ceasar Cipher")
 
-        self.label = Label(self.root, text="Enter a string to convert.")
+        self.label = Label(self.root, text="Enter a string")
         self.label.pack()
 
         self.entrytext = StringVar()
         Entry(self.root, textvariable=self.entrytext, width="400").pack()
 
-        self.label2 = Label(self.root, text="Enter number of letters to shift in the alphabet.")
+        self.label2 = Label(self.root, text="Enter number of letters to shift in the alphabet")
         self.label2.pack()
 
         self.entrynumber = StringVar()
