@@ -5,9 +5,9 @@ from cipher.caesar import encrypt
 class App(object):
     def __init__(self):
         self.root = Tk()
-		#set default dimensions and title
+        # set default dimensions and title
         self.root.geometry("500x200")
-        #self.root.configure(bg="#769ea6")
+        # self.root.configure(bg="#769ea6")
         self.root.wm_title("Ceasar Cipher")
 
         self.label = Label(self.root, text="Enter a string")
@@ -16,7 +16,9 @@ class App(object):
         self.entrytext = StringVar()
         Entry(self.root, textvariable=self.entrytext, width="400").pack()
 
-        self.label2 = Label(self.root, text="Enter number of letters to shift in the alphabet")
+        self.label2 = Label(
+            self.root, text="Enter number of letters to shift in the alphabet"
+        )
         self.label2.pack()
 
         self.entrynumber = StringVar()
@@ -63,5 +65,6 @@ class App(object):
         self.result.insert(1.0, result)
         self.result.configure(state="disabled")
         return True
-        
+
+
 App()
