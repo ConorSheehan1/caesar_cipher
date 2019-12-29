@@ -4,13 +4,13 @@
 # Usage
 Run caesar_cipher.py. You should see this interface: 
   
-![UI image](images/Capture.PNG)
+![UI image](.github/images/Capture.PNG)
 
 The program ignores everything other than characters in the Latin alphabet [a-zA-Z].
 
 It is possible to shift the text either direction. For example shifting text back 1 letter (-1) is equivalent to moving the text forward 25 letters (25). This also makes it easier to reverse ciphers. If you already know how many letters a piece of text is shifted forward, put a minus in front of that number to unscramble the text.  
  
-![UI image](images/reverse.PNG)
+![UI image](.github/images/reverse.PNG)
 
 
 
