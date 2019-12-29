@@ -5,9 +5,8 @@ from cipher.caesar import encrypt
 class App(object):
     def __init__(self):
         self.root = Tk()
-        # set default dimensions and title
+
         self.root.geometry("500x200")
-        # self.root.configure(bg="#769ea6")
         self.root.wm_title("Ceasar Cipher")
 
         self.label = Label(self.root, text="Enter a string")
@@ -43,7 +42,6 @@ class App(object):
         # flush old text
         self.result.delete(1.0, END)
 
-        # handle uppercase letters, ignore any non-alphabetical characters
         user_string = self.entrytext.get()
         try:
             user_increment = int(self.entrynumber.get())
@@ -54,7 +52,7 @@ class App(object):
             # break out of function to ensure no value error converting empty string to int
             return False
 
-        result = str(encrypt(user_string, user_increment))
+        result = encrypt(user_string, user_increment)
         if result == "":
             # result is now an error message
             error_message = "please insert a string in the first text box"
