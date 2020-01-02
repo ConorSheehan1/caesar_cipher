@@ -5,7 +5,8 @@ verify_ssl = true
 
 [scripts]
 lint = "black ."
-test = "python -m unittest discover tests"
+tests = "python -m unittest discover tests"
+ui = "python src/ui.py"
 
 [dev-packages]
 black = "*"
