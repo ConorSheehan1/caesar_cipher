@@ -9,7 +9,6 @@ jobs:
     strategy:
       matrix:
         # ubuntu-18.04 currently same as ubuntu-latest
-        # TODO: windows-latest, seems to fail at pipenv install --dev
         os: [ubuntu-16.04, ubuntu-18.04, macos-latest, windows-latest]
 
     steps:
@@ -18,10 +17,6 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: Remove lock file
-      run: |
-        rm Pipfile.lock
-      if: runner.os == 'Windows'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
