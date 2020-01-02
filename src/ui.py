@@ -65,4 +65,5 @@ class App(object):
         return True
 
 
-App()
+if __name__ == "__main__":
+    App()
