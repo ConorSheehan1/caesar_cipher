@@ -10,6 +10,7 @@ ui = "python src/ui.py"
 
 [dev-packages]
 black = "*"
+rope = "*"
 
 [packages]
 

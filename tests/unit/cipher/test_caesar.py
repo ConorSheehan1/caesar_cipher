@@ -1,5 +1,5 @@
 import unittest
-from src.cipher.caesar import encrypt
+from src.cipher.caesar import encrypt, trans_tables
 
 
 class TestCaesar(unittest.TestCase):
@@ -46,6 +46,20 @@ class TestCaesar(unittest.TestCase):
     def test_invalid_text(self):
         """args must be (str, int), not (int, int)"""
         assert encrypt(1, 1) == self.arg_error_msg
+
+    def test_trans_tables(self):
+        """should return lower and uppercase translation tables"""
+        lc_trans_table = {v: v + 2 for v in range(97, 121)}
+        lc_trans_table[121] = 97
+        lc_trans_table[122] = 98
+
+        uc_trans_table = {v: v + 2 for v in range(65, 89)}
+        uc_trans_table[89] = 65
+        uc_trans_table[90] = 66
+
+        actual_lc_trans_table, actual_uc_trans_table = trans_tables(2)
+        self.assertDictEqual(lc_trans_table, actual_lc_trans_table)
+        self.assertDictEqual(uc_trans_table, actual_uc_trans_table)
 
 
 if __name__ == "__main__":
