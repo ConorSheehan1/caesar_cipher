@@ -10,7 +10,7 @@ jobs:
       matrix:
         # ubuntu-18.04 currently same as ubuntu-latest
         os: [ubuntu-16.04, ubuntu-18.04, macos-latest, windows-latest]
-        python: [3.5, 3.6, 3.7]
+        python: [3.6, 3.7]
 
     steps:
     - uses: actions/checkout@v1
