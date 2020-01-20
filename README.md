@@ -1,6 +1,7 @@
 [![Build Status](https://github.com/ConorSheehan1/caesar_cipher/workflows/ci/badge.svg)](https://github.com/ConorSheehan1/caesar_cipher/actions/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Python version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/ConorSheehan1/caesar_cipher/master/.github/workflows/ci.yml&label=python&query=$.jobs.build.strategy.matrix.python)](https://github.com/ConorSheehan1/caesar_cipher/blob/master/.github/workflows/ci.yml#L13)
 
 # Requirements
 1. To run the app, all you need is python3 and tkinter. You can download them here: [https://www.python.org/downloads/](https://www.python.org/downloads/)
