@@ -22,7 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv install --verbose --dev --skip-lock --python=${{ matrix.python }}
+        pipenv install --dev --skip-lock --python=${{ matrix.python }}
     - name: Run tests
       run: |
         pipenv run tests
